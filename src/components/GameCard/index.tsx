@@ -2,7 +2,6 @@ import { LinearGradient } from "expo-linear-gradient";
 import {
   TouchableOpacity,
   ImageBackground,
-  ImageSourcePropType,
   TouchableOpacityProps,
   Text,
 } from "react-native";
@@ -14,7 +13,7 @@ export type GameCardProps = {
   id: string;
   title: string;
   _count: { ads: string };
-  bannerUrl: ImageSourcePropType;
+  bannerUrl: string;
 };
 
 type Props = TouchableOpacityProps & {
