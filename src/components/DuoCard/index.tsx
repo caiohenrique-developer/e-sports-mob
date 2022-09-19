@@ -41,7 +41,9 @@ export function DuoCard({
       />
       <DuoInfo
         label="Disponibilidade"
-        value={`${weekDays.length} dias \u2022 ${hourStart} - ${hourEnd}`}
+        value={`${weekDays.length} dia${
+          weekDays.length !== 1 ? "s" : ""
+        } \u2022 ${hourStart} - ${hourEnd}`}
       />
       <DuoInfo
         label="Chamada de áudio"
